@@ -15,4 +15,5 @@ void pint(stack_t **stack, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", n_node->n);
+	n_node = n_node->next;
 }
