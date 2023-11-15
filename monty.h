@@ -38,9 +38,6 @@ void pall(stack_t **stack, unsigned int line_num);
 void push(stack_t **stack, unsigned int line_num);
 void pint(stack_t **stack, unsigned int line_num);
 void pop(stack_t **stack, unsigned int line_num);
-<<<<<<< HEAD
 void swap(stack_t **stack, unsigned int line_num);
-=======
 int add(stack_t **stack, unsigned int line_num);
->>>>>>> 3d8427ef2475d8a92ba49d57390c6514fe2a11a3
 #endif
