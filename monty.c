@@ -39,6 +39,10 @@ int main(int argc, char *argv[])
             {
                 pall(&stack, line_num);
             }
+	    else if (strcmp(opcode, "pint") == 0)
+	    {
+		    pint(&stack, line_num);
+		}
             else
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);

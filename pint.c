@@ -12,7 +12,7 @@ void pint(stack_t **stack, unsigned int line_num)
 	n_node = malloc(sizeof(stack_t));
 	if (n_node == NULL)
 	{
-		print("L%u: can't pint, stack empty\n", line_number);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", line_num);
 		exit(EXIT_FAILURE);
 	}
 	while (n_node != NULL)
