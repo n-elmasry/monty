@@ -7,12 +7,13 @@
 void pint(stack_t **stack, unsigned int line_num)
 {
 	stack_t *n_node;
-
-	if (stack == NULL)
+	n_node = *stack;
+	
+	if (n_node == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", line_num);
 		exit(EXIT_FAILURE);
 	}
-	n_node = *stack;
 	printf("%d\n", n_node->n);
+	*stack = n_node->next;
 }

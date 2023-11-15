@@ -52,6 +52,11 @@ int main(int argc, char *argv[])
     }
 
     fclose(fptr);
-    free(stack);
+     while (stack != NULL)
+    {
+        stack_t *temp = stack;
+        stack = stack->next;
+        free(temp);
+    }
     return 0;
 }
