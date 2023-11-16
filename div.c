@@ -13,7 +13,7 @@ int _div(stack_t **stack, unsigned int line_num)
 
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%u: can't div, stack too short \n", line_num);
+		fprintf(stderr, "L%u: can't div, stack too short\n", line_num);
 		exit(EXIT_FAILURE);
 	}
 	temp = (*stack)->next;
