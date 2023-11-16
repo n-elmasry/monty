@@ -40,4 +40,7 @@ void pop(stack_t **stack, unsigned int line_num);
 void swap(stack_t **stack, unsigned int line_num);
 int add(stack_t **stack, unsigned int line_num);
 void nop(stack_t **stack, unsigned int line_num);
+void free_stack(stack_t *stack);
+void opcode_process(char *opcode, stack_t **stack, unsigned int line_num);
+void file_process(char *filename, stack_t **stack, unsigned int *line_num);
 #endif
