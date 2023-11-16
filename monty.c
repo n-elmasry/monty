@@ -39,36 +39,30 @@ int main(int argc, char *argv[])
 			{
 				pall(&stack, line_num);
 			}
-		else if (strcmp(opcode, "pint") == 0)
-		{
-			pint(&stack, line_num);
-		}
-		else if (strcmp(opcode, "pop") == 0)
+			else if (strcmp(opcode, "pint") == 0)
+			{
+				pint(&stack, line_num);
+			}
+			else if (strcmp(opcode, "pop") == 0)
 			{
 				pop(&stack, line_num);
 			}
-		else if (strcmp(opcode, "swap") == 0)
-				{
-					swap(&stack, line_num);
-				}
+			else if (strcmp(opcode, "swap") == 0)
+			{
+				swap(&stack, line_num);
+			}
+			else if (strcmp(opcode, "add") == 0)
+			{
+	 		
+				add(&stack, line_num);
+			}
 			else
 			{
 				fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);
 				exit(EXIT_FAILURE);
 			}
-		}
-	}
-	if (strcmp(opcode, "add") == 0)
-	{
-	 	{
-			add(&stack, line_num);
-		}
-			else
-			{
-				fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);
-				exit(EXIT_FAILURE);
 			}
-	}
+			}
 	fclose(fptr);
 	 while (stack != NULL)
 	{
@@ -78,3 +72,4 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
+
