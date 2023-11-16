@@ -58,9 +58,9 @@ int main(int argc, char *argv[])
 			}
 			else if (strcmp(opcode, "nop") == 0)
                         {
-				continue;
-                        }
 
+                                nop(&stack, line_num);
+                        }
 			else
 			{
 				fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);
