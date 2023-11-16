@@ -57,7 +57,7 @@ void opcode_process(char *opcode, stack_t **stack, unsigned int line_num)
 	}
 	else if (strcmp(opcode, "div") == 0)
 	{
-		div(stack, line_num);
+		_div(stack, line_num);
 	}
 	else
 	{
