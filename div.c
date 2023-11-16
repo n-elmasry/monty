@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * div - divide the second top element of stack by the top element of the stack
+ * _div - divide the second top element of stack by the top element of the stack
  * @stack: a pointer to node
  * @line_num: argument
  * Return: result
  */
-int div(stack_t **stack, unsigned int line_num)
+int _div(stack_t **stack, unsigned int line_num)
 {
 	stack_t *temp;
 	unsigned int result;

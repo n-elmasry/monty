@@ -44,5 +44,5 @@ void free_stack(stack_t *stack);
 void opcode_process(char *opcode, stack_t **stack, unsigned int line_num);
 void file_process(char *filename, stack_t **stack, unsigned int *line_num);
 int sub(stack_t **stack, unsigned int line_num);
-int div(stack_t **stack, unsigned int line_num);
+int _div(stack_t **stack, unsigned int line_num);
 #endif
