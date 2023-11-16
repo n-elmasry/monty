@@ -18,6 +18,11 @@ exit(EXIT_FAILURE);
 
 temp = (*stack)->next;
 
+if (temp == NULL)
+{
+exit(EXIT_FAILURE);
+}
+
 result = (*stack)->n + temp->n;
 
 (*stack)->n = result;
