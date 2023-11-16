@@ -9,7 +9,7 @@
 int sub(stack_t **stack, unsigned int line_num)
 {
 	stack_t *temp;
-	int result;
+	unsigned int result;
 
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
