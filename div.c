@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _div - divide the second top element of stack by the top element of the stack
+ * _div - divide second top element of stack by the top element of the stack
  * @stack: a pointer to node
  * @line_num: argument
  * Return: result
@@ -10,6 +10,7 @@ int _div(stack_t **stack, unsigned int line_num)
 {
 	stack_t *temp;
 	unsigned int result;
+
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't div stack too short\n", line_num);

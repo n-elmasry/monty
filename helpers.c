@@ -57,8 +57,7 @@ void opcode_process(char *opcode, stack_t **stack, unsigned int line_num)
 	}
 	else if (strcmp(opcode, "div") == 0)
 	{
-		_div(stack, line_num);
-	}
+		_div(stack, line_num); }
 	else
 	{
 		fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);
