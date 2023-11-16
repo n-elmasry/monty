@@ -51,6 +51,10 @@ void opcode_process(char *opcode, stack_t **stack, unsigned int line_num)
 	{
 		nop(stack, line_num);
 	}
+	else if (strcmp(opcode, "sub") == 0)
+	{
+		sub(stack, line_num);
+	}
 	else
 	{
 		fprintf(stderr, "L%u: unknown instruction %s\n", line_num, opcode);

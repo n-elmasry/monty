@@ -1,11 +1,12 @@
 #include "monty.h"
+
 /**
- * add - adds the top two elements of the stack.
+ * sub - subtract top element of stack from the second top element of the stack
  * @stack: a pointer to node
  * @line_num: argument
  * Return: result
  */
-int add(stack_t **stack, unsigned int line_num)
+int sub(stack_t **stack, unsigned int line_num)
 {
 	stack_t *temp;
 	int result;
@@ -22,7 +23,7 @@ int add(stack_t **stack, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 
-	result = (*stack)->n + temp->n;
+	result = temp->n - (*stack)->n;
 	(*stack)->n = result;
 	(*stack)->next = temp->next;
 
