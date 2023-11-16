@@ -1,10 +1,15 @@
 #include "monty.h"
-/*pall*/
-void pall(stack_t **stack, unsigned int line_num)
+/**
+* pall - prints all the values on the stack, starting from the top
+* @stack: a pointer to node
+* @line_num: argument
+* Return: nothing
+*/
+void pall(stack_t **stack, __attribute__((unused)) unsigned int line_num)
 {
 	stack_t *temp;
+
 	temp = *stack;
-	UNUSED(line_num);
 	while (temp != NULL)
 	{
 		printf("%i\n", temp->n);
